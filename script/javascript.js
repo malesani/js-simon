@@ -29,12 +29,18 @@ $("#stard").click(function(){
 
 
 
-while(numGenerati.length > numScriti.length){
-  $("#invia").click(function(){
+
+$("#invia").click(function(){
+   if(numGenerati.length > numScriti.length){
     numScriti.push($("#num_user").val())
-    console.log(numScriti)
-  })
-}
+   }else{
+    console.log("piu di 5 num")
+   }
+   
+   console.log(numScriti);
+})
+  
+
 
 console.log(numScriti)
 
